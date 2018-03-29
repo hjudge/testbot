@@ -14,7 +14,7 @@ module.exports = function(robot) {
 
 	robot.hear(/address (.*)/i, function(msg) {
 		var text = msg.match[1];
-		var accessToken = "pk.eyJ1IjoiaG1qdWRnZSIsImEiOiJKbTZ4cnh3In0.Hs4fKTtRBMip0AXm56Lbmg";
+		var accessToken = "TOKEN";
 	if (!accessToken) {
 	msg.send("Please enter your Mapbox access token in the environment variable accessToken.")
 	}
